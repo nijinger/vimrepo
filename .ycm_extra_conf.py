@@ -19,7 +19,13 @@ BASE_FLAGS = [
         '-I/usr/lib/',
         '-I/usr/include/'
         '-I/home/anl/jing.li/software/root6/root/lib/',
-        '-I/home/anl/jing.li/software/root6/root/include'
+        '-I/home/anl/jing.li/software/root6/root/include',
+        '-I/home/anl/jing.li/software/geant4-10.4.2-install/include/Geant4/',
+        '-I/home/anl/jing.li/software/geant4-10.4.2-install/lib64/',
+        '-I./include/',
+        '-I./src/',
+        '-I../include/',
+        '-I../src/'
         ]
 
 SOURCE_EXTENSIONS = [
@@ -33,8 +39,7 @@ SOURCE_EXTENSIONS = [
 
 SOURCE_DIRECTORIES = [
         'src',
-        'lib',
-        '/home/anl/jing.li/software/root6/root/lib'
+        'lib'
         ]
 
 HEADER_EXTENSIONS = [
@@ -45,8 +50,7 @@ HEADER_EXTENSIONS = [
         ]
 
 HEADER_DIRECTORIES = [
-        'include',
-        '/home/anl/jing.li/software/root6/root/include'
+        'include'
         ]
 
 def IsHeaderFile(filename):
