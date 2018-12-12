@@ -33,6 +33,7 @@ Plugin 'google/vim-codefmt'
 " Also add Glaive, which is used to configure codefmt's maktaba flags. See
 " `:help :Glaive` for usage.
 Plugin 'google/vim-glaive'
+Plugin 'google/vim-colorscheme-primary'
 " ...
 
 "Plugin 'jeaye/color_coded'
@@ -70,5 +71,11 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
-syntax on
+set laststatus=2
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+" for google color scheme
+syntax enable
+set t_Co=256
+set background=light
+colorscheme primary
